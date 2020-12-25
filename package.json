@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sh proto/build.sh",
+    "client": "ts-node client/index.ts",
+    "server": "ts-node server/index.ts"
   },
   "repository": {
     "type": "git",
