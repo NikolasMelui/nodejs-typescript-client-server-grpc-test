@@ -24,6 +24,6 @@ message UserRequest {
 
 service Users {
     rpc GetUser(UserRequest) returns (User) {};
-    rpc GetUser(stream User) returns (google.protobuf.Empty) {};
+    rpc CreateUser(stream User) returns (google.protobuf.Empty) {};
     rpc GetUsers(google.protobuf.Empty) returns (stream User) {};
 }
